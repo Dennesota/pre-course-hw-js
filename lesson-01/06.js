@@ -1,5 +1,5 @@
 let str = "zzzzyzz";
 
-let result = str.includes("y") ? "нашел" : "заблудился"
+let result1 = str.includes("y") ? "нашел" : "заблудился"
 
-console.log(result)
+console.log(result1)
