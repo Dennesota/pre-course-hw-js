@@ -11,3 +11,27 @@
 //         city: "LA"
 //     }
 // };
+
+// let newPassportWithAddress = {...passportWithAddress, ...address, city:'Bobryisk' }
+
+// console.log(passportWithAddress.address.city)
+// console.log(newPassportWithAddress.address.city)
+
+let passportWithAddress = {
+    name: "Petr",
+    surname: "Petrov",
+    address: {
+        country: "USA",
+        city: "LA"
+    }
+};
+
+// Создаем глубокую копию объекта
+let newPassportWithAddress = structuredClone(passportWithAddress);
+
+// Меняем значение свойства city в скопированном объекте
+newPassportWithAddress.address.city = "Bobryisk";
+
+// Проверяем значения в консоли
+console.log(passportWithAddress.address.city); // Вывод: LA
+console.log(newPassportWithAddress.address.city); // Вывод: Bobryisk
