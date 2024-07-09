@@ -1,5 +1,5 @@
 function factorial(n) {
-    debugger; // Приостановка выполнения здесь
+    //debugger; // Приостановка выполнения здесь
     if (n === 0 || n === 1) {
         return 1;
     } else {
